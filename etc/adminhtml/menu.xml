@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="MageGuide_Skroutz::Skroutz_Label"
+                title="MageGuide Skroutz"
+                module="MageGuide_Skroutz"
+                sortOrder="80"
+                parent="MageGuide_Mgbase::MageGuide"
+                resource="MageGuide_Skroutz::Skroutz_Label"
+        />
+        <add
+                id="MageGuide_Skroutz::Skroutz"
+                title="Skroutz Analytics Configuration"
+                module="MageGuide_Skroutz"
+                action="adminhtml/system_config/edit/section/mageguide_skroutz/"
+                sortOrder="1"
+                parent="MageGuide_Skroutz::Skroutz_Label"
+                resource="MageGuide_Skroutz::Skroutz"
+        />
+    </menu>
+</config>
