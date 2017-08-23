@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">    
     <body>
         <referenceContainer name="before.body.end">
-		    <block class="Magento\Framework\View\Element\Template" template="MageGuide_Skroutz::skroutz-body.phtml" name="skroutz" />
+		    <block class="Magento\Framework\View\Element\Template" template="MageGuide_Skroutz::skroutz-body.phtml" name="skroutz_body" />
         </referenceContainer>
     </body>
 </page>
