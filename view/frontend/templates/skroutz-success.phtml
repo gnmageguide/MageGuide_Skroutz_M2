@@ -8,7 +8,7 @@
 
 <!-- SKROUTZ ANALYTICS CODE start -->
 <script>
-  sa('ecommerce', 'addOrder', JSON.stringify({
+  skroutz_analytics('ecommerce', 'addOrder', JSON.stringify({
     order_id: '<?php echo $block->getRealOrderId(); ?>',	// Order ID. Required.
     revenue:  '<?php echo $block->getPrice(); ?>', 			// Grand Total. Includes Tax and Shipping. Does not include payment costs.
     shipping: '<?php echo $block->getShippingCost(); ?>',	// Total Shipping Cost. Does not include payment costs.
@@ -29,7 +29,7 @@
 			}
 	?>
 
-  	sa('ecommerce', 'addItem', JSON.stringify({
+  	skroutz_analytics('ecommerce', 'addItem', JSON.stringify({
 		order_id:   '<?php echo $block->getRealOrderId(); ?>',	// Order ID. Required.
 		product_id: '<?php echo $item_sku; ?>',					// Product ID. Required.
 		name:       '<?php echo $item->getName(); ?>',			// Product Name. Required.
